@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>CLICK TO SEE A RANDOM SPORTS PLAYER</center>
+
+	<div id="box"></div>
+
+<script type="text/javascript">
+	
+	var box = document.getElementById('box');
+
+var nickNames = ["Curry.png", "DeGrom.png", "Trout.png" ]
+
+var random = Math.floor(Math.random()*3)
+
+console.log(random)
+
+box.innerText = nickNames[random]
+
+</script>
+</body>
+</html>
