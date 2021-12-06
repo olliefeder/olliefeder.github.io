@@ -3,35 +3,41 @@
 <head>
 	<style type="text/css">
 		#tv {
-			width: 800px;
-			height: 600px;
-			background-image: url(https://target.scene7.com/is/image/Target/5xtdj-tvs-QUIVER-190514-1557863699364);
+			background-image: url(tv.png);
+			width: 1000px;
+			height: 800px;
+			background-size: contain;
 			background-repeat: no-repeat;
 			z-index: 1;
-			position: relative;
-			top: -50px;
+			position: fixed;
+			left:5%;
 		}
 
 		#box {
-			width: 610px;
-			height: 345px;
+			width: 700px;
+			height: 500px;
 			background-repeat: no-repeat;
-			background-size: cover;
-			position: absolute;
-			background-image: url(Dame.png)
-			top: 220px;
-			left: 300px;
+			background-size: contain;
+			position: relative;
 			z-index: 1;
+			background-image: url(jessie.png);
+			top:20px;
+			left:20px;
 		}
 	</style>
 	<title></title>
 </head>
 <body>
-	<center>
-		<p id="title">What show should you watch for Thanksgiving? </p>
-		<div id="tv"></div>
-		<div id="box" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTY0MTYyNTk5M15BMl5BanBnXkFtZTgwMjE0ODYzMjE@._V1_FMjpg_UX1000_.jpg)">
-	</center>
+	
+		<center><p id="title">What show should you watch for Thanksgiving? </p>
+</center>
+		<br><br>
+
+		<div id="tv">
+			<div id="box"></div>
+		</div>
+		
+	
 
 </body>
 </html>
