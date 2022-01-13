@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.ye{
+		height: 50px;
+		position: absolute;
+		width: 50px;
+		background-image:url(quick.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+</style>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+	document.addEventListener("mousemove",
+
+		function Quick(input) {
+		var ye = document.createElement("div")
+		document.body.appendChild(ye);
+		ye.classList.add("ye")
+
+		ye.style.left = input.clientX -50+ "px";
+		ye.style.top = input.clientY -50+ "px";
+		console.log(input);
+
+	})
+</script>
+
+</body>
+</html>
