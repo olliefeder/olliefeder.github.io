@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#one{
+			width:500px;
+			height:500px;
+			left:10px;
+			left:10px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color:blue;
+			cursor: pointer;
+		}
+		#one.on{
+			background-image: url(Luna.jpg);
+			background-size: cover;
+		}
+		#two{
+			width:500px;
+			height:500px;
+			left:510px;
+			top:10px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color:red;
+			cursor: pointer;
+		}
+		#two.on{ 
+			background-image: url(Luna2.jpg);
+			background-size: cover;
+		}
+		#three{
+			width:500px;
+			height:500px;
+			left:1010px;
+			top:10px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color:yellow;
+			cursor: pointer;
+		}
+		#three.on{
+			background-image: url(Luna3.jpeg);
+			background-size: cover;
+		}
+
+		#four{
+			width:500px;
+			height:500px;
+			left:10px;
+			top:510px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color:black;
+			cursor: pointer;
+		}
+		#four.on{
+			background-image: url(Luna4.jpeg);
+			background-size: cover;
+		}
+
+		#five{
+			width:500px;
+			height:500px;
+			left:510px;
+			top:510px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color:green;
+			cursor: pointer;
+		}
+		#five.on{
+			background-image: url(Luna5.JPG);
+			background-size: cover;
+		}
+
+		#six{
+			width:500px;
+			height:500px;
+			left:1010px;
+			top:510px;
+			position: absolute;
+			background-repeat:no-repeat;
+			background-color: pink;
+			cursor: pointer;
+		}
+		#six.on{
+			background-image: url(Luna.jpg);
+			background-size: cover;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<div id="one" onclick="functionone()"></div>
+	<div id="two" onclick="functiontwo()"></div>
+	<div id="three" onclick="functionthree()"></div>
+	<div id="four" onclick="functionfour()"></div>
+	<div id="five" onclick="functionfive()"></div>
+	<div id="six" onclick="functionsix()"></div>	
+
+<script type="text/javascript">
+	var one = document.getElementById('one');
+	var two = document.getElementById('two');
+	var three = document.getElementById('three');
+	var four = document.getElementById('four');
+	var five = document.getElementById('five');
+	var six = document.getElementById('six');
+	function functionone(){
+		one.classList.toggle("on");
+	}
+	function functiontwo(){
+		two.classList.toggle("on");
+	}
+	function functionthree(){
+		three.classList.toggle("on");
+	}
+	function functionfour(){
+		four.classList.toggle("on");
+	}
+	function functionfive(){
+		five.classList.toggle("on");
+	}
+	function functionsix(){
+		six.classList.toggle("on");
+	}
+
+</script>
+
+</body>
+
+</html>
