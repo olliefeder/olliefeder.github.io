@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #janet {
+            position: absolute;
+            width: 200px;
+            height:200px;
+            background-image:url(https://ichef.bbci.co.uk/images/ic/1920x1080/p09ttryr.jpg;
+            background-size: cover);
+        }
+
+        #background {
+            width: 1430px;
+            height: 800px;
+            background-image:url(frogtoad.jpeg);
+            background-size: cover;
+
+        }
+
+        #frog {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image:url(https://ichef.bbci.co.uk/images/ic/1920x1080/p09ttryr.jpg);
+            z-index:1;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div id="janet"></div>
+    <div id="background"></div>
+    <div id="frog"></div>
+    <script type="text/javascript">
+        
+        var books = ["frog and toad ", "cat in the hat ", "the fire cat",]
+        var x = 0 
+        document.addEventListener("click", function() {
+            console.log(books[x])
+        if (x < 2){
+        x = x + 1}
+        else {
+        x = 0};
+
+        
+
+})
+
+</script>
+
+</body>
+</html>
