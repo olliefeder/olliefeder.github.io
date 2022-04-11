@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+    <style type="text/css">
+    
+     .virus{
+            left:1000px;
+            top:800px;
+            background-size:contain;
+            width:100px;
+            height:100px;
+            background-image:url(obi.jpeg);
+            transition:.5s;
+            margin:10px;
+            background-position:center;
+            background-repeat: no-repeat;
+            position:absolute;
+
+        }
+
+</style>
+</head>
+<body>
+
+<audio id="swoosh" src=swoosh.mp3></audio>
+	
+
+<script type="text/javascript">
+	
+var swoosh = document.getElementById('swoosh');
+    // var input = document.getElementById('input');
+        var x = 0;
+
+    function createCorona() {
+        var corona = document.createElement('div');
+        document.body.appendChild(corona);
+        corona.classList.add("virus");
+
+        function changePosition() {
+            corona.style.left = 1000 * Math.random() + "px";
+            corona.style.top = 1000 * Math.random() + "px";
+
+
+        };
+
+
+        corona.addEventListener("click", function() {
+            console.log("hi");
+            x = x + 1;
+            // input.value = x;
+            corona.classList.remove("virus");
+            swoosh.play()
+
+
+        })
+
+        setInterval(changePosition, 2000)
+    };
+
+
+    setInterval(createCorona, 1000);
+
+</script>
+
+
+
+</body>
+</html>

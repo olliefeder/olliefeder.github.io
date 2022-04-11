@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.virus{
+			background-image: url(quick.png);
+			background-color: red;
+			background-size: contain;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			transition: all 1s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+		
+	// var pew = document.getElementbyId('sound');
+	// var input = document.getElementById('input');
+	var x = 0;
+
+	function createCorona(){
+		var corona = document.createElement('div');
+		document.body.appendChild(corona);
+		corona.class List.add("virus");
+
+		function changePosition(){
+			corona.style.left = 1000 * Math.random() + "px";
+			corona.style.top = 1000 * Math.random() + "px"; };
+			corona.addEventListener("click", function(){console.log("hi");
+			x = x+1;
+			input.value = x;
+			corona.classList.remove("virus");
+			pew.play() })
+
+		setInterval(changePosition, 2000) };
+
+		setInterval(createCorona, 1000);
+
+
+
+	</script>
+	
+
+</body>
+</html>
