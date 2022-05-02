@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Square+Peg&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+
+
+
+body{
+font-family: 'Orelega One', cursive;
+background-color:magenta;
+
+}
+#text
+{
+opacity: 0;
+font-size: 40px;
+
+animation-duration: 60s;
+animation-name:dance;
+animation-iteration-count: 1;
+top: 825px;
+position: relative;
+
+}
+
+
+@keyframes dance {
+0%{top: 825px;
+}
+100%{top: 0px;}
+
+}
+
+
+</style>
+
+</head>
+<body>
+<audio id="came" src="came.mp3"></audio>
+
+<center><div id="text">The sun goes down, the stars come out<br>
+And all that counts is here and now<br>
+My universe will never be the same<br>
+I'm glad you came (Came, came, came)<br><br><br><br><br><br><br><br>
+You cast a spell on me, spell on me<br>
+You hit me like the sky fell on me, fell on me<br>
+And I decided you look well on me, well on me<br>
+So let's go somewhere no one else can see, you and me<br>
+Turn the lights out now<br>
+Now I'll take you by the hand<br>
+Hand you another drink<br>
+Drink it if you can<br>
+Can you spend a little time?<br>
+Time is slipping away<br>
+Away from us, so stay<br>
+Stay with me, I can make<br>
+Make you glad you came<br><br>
+The sun goes down, the stars come out<br>
+And all that counts is here and now<br>
+My universe will never be the same<br>
+I'm glad you came<br>
+I'm glad you came<br><br>
+You cast a spell on me, spell on me<br>
+You hit me like the sky fell on me, fell on me<br>
+And I decided you look well on me, well on me<br>
+So let's go somewhere no one else can see, you and me<br><br>
+Turn the lights out now<br>
+Now I'll take you by the hand<br>
+Hand you another drink<br>
+Drink it if you can<br>
+Can you spend a little time?<br>
+Time is slipping away<br>
+Away from us, so stay<br>
+Stay with me, I can make<br>
+Make you glad you came<br><br>
+The sun goes down, the stars come out<br>
+And all that counts is here and now<br>
+My universe will never be the same<br>
+I'm glad you came<br>
+I'm glad you came<br>
+I'm glad you came<br>
+So glad you came<br>
+I'm glad you came<br>
+I'm glad you came<br><br>
+The sun goes down, the stars come out<br>
+And all that counts is here and now<br>
+My universe will never be the same<br>
+I'm glad you came<br>
+I'm glad you came</div>
+</center>
+<script type="text/javascript">
+
+
+
+var song = document.getElementById('came');
+
+
+var text = document.getElementById('text')
+
+document.addEventListener("click", function() {
+text.style.opacity = "1";
+song.play()
+console.log(text)
+
+})
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
